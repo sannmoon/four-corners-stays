@@ -1,7 +1,11 @@
 import "./Homepage.scss";
 import bgSection1 from "../../assets/bgSection1.jpg";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "../../components/Language Selector/languageSelector";
 
 function Homepage() {
+  const { t } = useTranslation();
+
   return (
     <div className="homepage">
       <div
@@ -11,17 +15,17 @@ function Homepage() {
         }}
       >
         <div className="pageHeader">
-          <h2>COZY RETREAT</h2>
-          <h1>
-            IMMERSE YOURSELF IN NATURE WITH STUNNING VIEWS FROM THIS PEACEFUL
-            RETREAT!
-          </h1>
-          <p>
-            Wake up to stunning views. Relax on the porch and breathe in the
-            fresh air. This comfortable home provides a perfect escape for those
-            seeking a connection with nature.
-          </p>
-          <button>CONTACT US</button>
+          <div>
+            <div className="langSelector">
+              <LanguageSelector />
+            </div>
+          </div>
+
+          <h3>{t("greeting")}</h3>
+          <h2>{t("homepage_subtitle")}</h2>
+          <h1>{t("homepage_title")}</h1>
+          <p>{t("homepage_desc")}</p>
+          <button>{t("homepage_contact")}</button>
         </div>
       </div>
     </div>
