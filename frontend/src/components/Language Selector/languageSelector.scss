@@ -11,8 +11,7 @@
     img {
       width: 30px;
       height: 30px;
-      background-color: black;
-      color: white;
+      background-color: white;
       border-radius: 5px;
       padding: 7px;
     }
@@ -20,10 +19,10 @@
 
   .languageSwitch {
     position: absolute; //🧡
-    top: 42px;
-    background-color: black;
-    color: white;
-    height: 65px;
+    top: 45px;
+    background: rgba(246, 216, 219, 0.5);
+    color: black;
+    height: 55px;
     width: 110px;
     transition: all 4s ease;
     display: none;
@@ -32,6 +31,7 @@
     padding: 5px 0 5px 15px;
     cursor: pointer;
     text-align: left;
+    border-radius: 5px;
 
     &.active {
       display: block;
