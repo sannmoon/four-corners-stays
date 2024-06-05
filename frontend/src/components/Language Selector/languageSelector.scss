@@ -18,15 +18,13 @@
   }
 
   .languageSwitch {
-    position: absolute; //🧡
+    position: absolute;
     top: 45px;
     background: rgba(246, 216, 219, 0.5);
     color: black;
     height: 55px;
     width: 110px;
-    transition: all 4s ease;
     display: none;
-    flex-direction: column;
     font-size: 20px;
     padding: 5px 0 5px 15px;
     cursor: pointer;
