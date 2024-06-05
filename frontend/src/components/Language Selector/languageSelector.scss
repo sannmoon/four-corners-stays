@@ -1,0 +1,38 @@
+.left {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+  align-items: center;
+
+  .langIcon {
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 7px;
+    }
+  }
+
+  .languageSwitch {
+    position: absolute;
+    top: 45px;
+    background: rgba(246, 216, 219, 0.5);
+    color: black;
+    height: 55px;
+    width: 110px;
+    display: none;
+    font-size: 20px;
+    padding: 5px 0 5px 15px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+
+    &.active {
+      display: block;
+    }
+  }
+}
