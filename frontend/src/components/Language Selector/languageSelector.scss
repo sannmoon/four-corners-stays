@@ -1,9 +1,6 @@
-.left {
-  position: fixed;
-  top: 10px;
-  left: 20px;
+.langContainer {
+  position: relative;
   z-index: 10;
-  align-items: center;
 
   .langIcon {
     cursor: pointer;
@@ -20,9 +17,10 @@
   .languageSwitch {
     position: absolute;
     top: 45px;
-    background: rgba(246, 216, 219, 0.5);
+    right: 0;
+    background: rgba(246, 216, 219, 0.9);
     color: black;
-    height: 55px;
+    height: 60px;
     width: 110px;
     display: none;
     font-size: 20px;

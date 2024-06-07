@@ -11,7 +11,11 @@ i18n
     resources: {
       en: {
         translation: {
-          greeting: "Hello, Welcome!",
+          nav_home: "Home",
+          nav_rooms: "Rooms",
+          nav_services: "Services",
+          nav_about: "About",
+          nav_contact: "Contact",
           homepage_subtitle: "COZY RETREAT",
           homepage_title:
             "IMMERSE YOURSELF IN NATURE WITH STUNNING VIEWS FROM THIS PEACEFUL RETREAT!",
@@ -22,7 +26,11 @@ i18n
       },
       pl: {
         translation: {
-          greeting: "Czesc, Witaj!",
+          nav_home: "Strona głòwna",
+          nav_rooms: "Pokoje",
+          nav_services: "Usługi",
+          nav_about: "O nas",
+          nav_contact: "Kontakt",
           homepage_subtitle: "PRZYTULNE SCHRONISKO",
           homepage_title:
             "ZANURZ SIĘ W NATURZE Z ZAPIERAJĄCYMI DECH W PIERSIACH WIDOKAMI W TYM SPOKOJNYM SCHRONISKU!",

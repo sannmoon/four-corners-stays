@@ -1,7 +1,6 @@
 import "./Homepage.scss";
 import bgSection1 from "../../assets/bgSection1.jpg";
 import { useTranslation } from "react-i18next";
-import LanguageSelector from "../../components/Language Selector/languageSelector";
 
 function Homepage() {
   const { t } = useTranslation();
@@ -15,13 +14,6 @@ function Homepage() {
         }}
       >
         <div className="pageHeader">
-          <div>
-            <div className="langSelector">
-              <LanguageSelector />
-            </div>
-          </div>
-
-          <h3>{t("greeting")}</h3>
           <h2>{t("homepage_subtitle")}</h2>
           <h1>{t("homepage_title")}</h1>
           <p>{t("homepage_desc")}</p>
