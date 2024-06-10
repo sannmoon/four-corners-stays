@@ -18,7 +18,7 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className="left">
+    <div className="langContainer">
       <div className="langIcon">
         <img src={redglobe} alt="" onClick={() => setOpen((prev) => !prev)} />
       </div>
