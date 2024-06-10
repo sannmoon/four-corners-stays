@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import LanguageSelector from "../Language Selector/LanguageSelector";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
