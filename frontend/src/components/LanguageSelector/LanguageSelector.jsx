@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./languageSelector.scss";
 import { useState } from "react";
-import redglobe from "../../assets/redglobe.svg";
+import brownglobe from "../../assets/brownglobe.svg";
 
 const languages = [
   { code: "en", lang: "🇺🇸 English " },
@@ -20,7 +20,7 @@ const LanguageSelector = () => {
   return (
     <div className="langContainer">
       <div className="langIcon">
-        <img src={redglobe} alt="" onClick={() => setOpen((prev) => !prev)} />
+        <img src={brownglobe} alt="" onClick={() => setOpen((prev) => !prev)} />
       </div>
       <div className={open ? "languageSwitch active" : "languageSwitch"}>
         {languages.map((lng) => {

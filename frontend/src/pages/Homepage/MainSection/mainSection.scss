@@ -1,0 +1,40 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100ch;
+
+  .pageHeader {
+    width: 1170px;
+    height: 251px;
+    color: white;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    button {
+      width: 210px;
+      height: 50px;
+      background-image: linear-gradient(
+        to right,
+        rgb(181, 81, 14),
+        rgba(20, 206, 119, 0.756)
+      );
+      border: none;
+      display: inline-block;
+      padding: 13px;
+      font-size: 15px;
+      text-align: center;
+      border-radius: 6px;
+      position: relative;
+      color: white;
+    }
+  }
+}

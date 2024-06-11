@@ -1,0 +1,19 @@
+.sliderItem {
+  img {
+    width: 380px;
+    object-fit: cover;
+    height: 500px;
+    border-radius: 20px;
+    &:hover {
+      scale: 1.01;
+      transition: all 0.3s ease;
+    }
+  }
+  .sliderTitle {
+    margin-bottom: 10px;
+  }
+  .sliderSubtitle {
+    margin-top: 0;
+    color: rgb(192, 120, 89);
+  }
+}
