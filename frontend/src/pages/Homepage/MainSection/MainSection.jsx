@@ -1,5 +1,4 @@
 import "./mainSection.scss";
-// import bgSection1 from "../../../assets/bgSection1.jpg";
 import Bedroom3 from "../../../assets/Bedroom3.jpg";
 import { useTranslation } from "react-i18next";
 
