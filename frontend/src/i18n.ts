@@ -33,6 +33,24 @@ i18n
           boho_subtitle: "Max: 4 guests",
           loft_title: "Ruby Loft",
           loft_subtitle: "Max: 3 guests",
+          services_title: "SERVICES",
+          games: "Board Games & Puzzles",
+          games_desc:
+            "Challenge your friends and family to a fun night in with a selection of board games and puzzles for all ages",
+          drinks: "Drinks",
+          drinks_desc: "Free coffee, tea and water in every room",
+          kitchen: "Shared Kitchen",
+          kitchen_desc:
+            " This fully equipped kitchen is open to everyone in the house. Prepare meals or simply have a space to cook your favorite dishes. It's a great way to socialize and share meals.",
+          lawn: "Backyard with Grill/Fireplace",
+          lawn_desc:
+            "Step outside and soak up the fresh air on the spacious lawn.  Grill up some burgers for a backyard barbecue, gather around a crackling fireplace for cozy evenings under the stars, or simply relax on the chairs and enjoy the peace and quiet.",
+          wifi: "Free WiFi",
+          wifi_desc:
+            "Share your adventures and connect with loved ones back home with our free Wi-Fi available throughout the house.",
+          parking: "Free Parking",
+          parking_desc:
+            "Forget about parking hassles! This house offers free on-site parking, ensuring a stress-free arrival and departure.",
         },
       },
       pl: {
@@ -59,6 +77,24 @@ i18n
           boho_subtitle: "Max: 4 gości",
           loft_title: "Rubinowy Loft",
           loft_subtitle: "Max: 3 gości",
+          services_title: "USŁUGI",
+          games: "Gry planszowe i puzzle",
+          games_desc:
+            "Rzuć wyzwanie znajomym i rodzinie na wieczór pełen zabawy z naszą kolekcją gier planszowych i puzzli dla wszystkich grup wiekowych",
+          drinks: "Napoje",
+          drinks_desc: "Bezpłatna kawa, herbata i woda w każdym pokoju",
+          kitchen: "Wspólna kuchnia",
+          kitchen_desc:
+            "Ta w pełni wyposażona kuchnia jest dostępna dla wszystkich mieszkańców domu. Przygotuj posiłki lub po prostu gotuj swoje ulubione potrawy. To świetny sposób na spotkania towarzyskie i wspólne posiłki.",
+          lawn: "Ogród z grillem/kominkiem",
+          lawn_desc:
+            "Wyjdź na zewnątrz i wchłoń świeże powietrze na przestronnym trawniku. Urządź grilla na świeżym powietrzu, zbierz się przy trzaskającym kominku na przytulny wieczór pod gwiazdami lub po prostu zrelaksuj się na krzesłach i ciesz się spokojem.",
+          wifi: "Bezpłatne Wi-Fi",
+          wifi_desc:
+            "Dziel się swoimi przygodami i utrzymuj kontakt z bliskimi w domu dzięki naszemu bezpłatnemu Wi-Fi dostępnym w całym domu.",
+          parking: "Bezpłatny parking",
+          parking_desc:
+            "Zapomnij o kłopotach z parkowaniem! Dom oferuje bezpłatny parking na miejscu, zapewniając bezstresowy przyjazd i wyjazd.",
         },
       },
     },
