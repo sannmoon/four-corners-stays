@@ -5,8 +5,6 @@ import InfoBox from "../../../components/InfoBox/InfoBox";
 import NoteAddSharpIcon from "@mui/icons-material/NoteAddSharp";
 import LocalCafeIcon from "@mui/icons-material/LocalCafe";
 import Countertops from "@mui/icons-material/Countertops";
-// import FireplaceIcon from "@mui/icons-material/Fireplace"; 🚨pick
-// import OutdoorGrillIcon from "@mui/icons-material/OutdoorGrill"; 🚨pick
 import DeckIcon from "@mui/icons-material/Deck";
 import WifiIcon from "@mui/icons-material/Wifi";
 import DriveEtaIcon from "@mui/icons-material/DriveEta";
