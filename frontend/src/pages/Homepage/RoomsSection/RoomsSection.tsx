@@ -2,10 +2,10 @@ import "./roomsSection.scss";
 import Slider from "../../../components/Slider/Slider";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Sunny from "../../../assets/Sunny.jpeg";
-import BlueSerenity from "../../../assets/BlueSerenity.jpg";
-import Loft from "../../../assets/Loft.jpeg";
-import Boho from "../../../assets/Boho.jpeg";
+import Sunny from "../../../assets/gallery/Sunny.jpeg";
+import BlueSerenity from "../../../assets/gallery/BlueSerenity.jpg";
+import Loft from "../../../assets/gallery/Loft.jpeg";
+import Boho from "../../../assets/gallery/Boho.jpeg";
 
 function RoomsSection() {
   const { t } = useTranslation();
