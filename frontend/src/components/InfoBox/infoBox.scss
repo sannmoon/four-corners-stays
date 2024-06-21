@@ -1,0 +1,24 @@
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 350px;
+  margin-right: 70px;
+  .infoBoxIcon {
+    svg {
+      width: 6rem;
+      height: 4rem;
+      fill: #026088; //or color
+    }
+  }
+  .infoBoxContent {
+    .sliderTitle {
+      margin-bottom: 5px;
+    }
+    .sliderSubtitle {
+      font-weight: 450;
+      font-size: 15px;
+    }
+  }
+}
