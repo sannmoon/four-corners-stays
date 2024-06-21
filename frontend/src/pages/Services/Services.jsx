@@ -1,5 +1,3 @@
-import "./Services.scss";
-
 function Services() {
   return <div className="services">Services</div>;
 }

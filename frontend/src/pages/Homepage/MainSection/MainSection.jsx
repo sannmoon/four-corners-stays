@@ -1,5 +1,5 @@
 import "./mainSection.scss";
-import Bedroom3 from "../../../assets/Bedroom3.jpg";
+import Bedroom3 from "../../../assets/gallery/Bedroom3.jpg";
 import { useTranslation } from "react-i18next";
 
 function MainSection() {
