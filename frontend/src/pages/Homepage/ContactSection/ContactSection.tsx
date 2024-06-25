@@ -13,6 +13,7 @@ import InfoBox from "../../../components/InfoBox/InfoBox";
 import { LabelledTextarea } from "../../../components/LabelledTextarea/LabelledTextarea";
 
 function ContactSection() {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
 
   const schema = yup.object().shape({
@@ -33,8 +34,6 @@ function ContactSection() {
     setLoading(true);
     setLoading(false);
   };
-
-  const { t } = useTranslation();
 
   return (
     <div className="contactSection">

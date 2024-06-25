@@ -21,7 +21,7 @@ i18n
             "IMMERSE YOURSELF IN NATURE WITH STUNNING VIEWS FROM THIS PEACEFUL RETREAT!",
           homepage_desc:
             "Wake up to stunning views. Relax on the porch and breathe in the fresh air. This comfortable home provides a perfect escape for those seeking a connection with nature.",
-          contact: "Contact Us",
+          homepage_contact: "Contact Us",
           rooms_title: "Our Rooms",
           rooms_subtitle:
             "Find the perfect space to unwind and recharge, tailored to your individual needs 🍃",
@@ -58,6 +58,7 @@ i18n
           phone: "Call Us",
           contact_email: "Send Your Mail",
           send: "Send",
+          contact: "Contact Us",
         },
       },
       pl: {
@@ -72,7 +73,7 @@ i18n
             "ZANURZ SIĘ W NATURZE Z ZAPIERAJĄCYMI DECH W PIERSIACH WIDOKAMI W TYM SPOKOJNYM SCHRONISKU!",
           homepage_desc:
             "Budź się do zachwycających widoków. Odpręż się na werandzie i wdychaj świeże powietrze. Ten komfortowy dom zapewnia idealną ucieczkę dla tych, którzy szukają kontaktu z naturą.",
-          contact: "Skontaktuj Się Z Nami",
+          homepage_contact: "Skontaktuj Się Z Nami",
           rooms_title: "Nasze Pokoje",
           rooms_subtitle:
             "Odnajdź swoją idealną oazę relaksu i odzyskaj energię, stworzoną specjalnie z myślą o tobie",
@@ -106,8 +107,9 @@ i18n
           message: "Wiadomość",
           address: "Adres",
           phone: "Zadzwoń do Nas",
-          contact_email: "Wyślij Swój Email",
+          contact_email: "Wyślij Email",
           send: "Wysłać",
+          contact: "Skontaktuj Się Z Nami",
         },
       },
     },
