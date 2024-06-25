@@ -21,7 +21,7 @@ i18n
             "IMMERSE YOURSELF IN NATURE WITH STUNNING VIEWS FROM THIS PEACEFUL RETREAT!",
           homepage_desc:
             "Wake up to stunning views. Relax on the porch and breathe in the fresh air. This comfortable home provides a perfect escape for those seeking a connection with nature.",
-          homepage_contact: "CONTACT US",
+          homepage_contact: "Contact Us",
           rooms_title: "Our Rooms",
           rooms_subtitle:
             "Find the perfect space to unwind and recharge, tailored to your individual needs 🍃",
@@ -51,6 +51,14 @@ i18n
           parking: "Free Parking",
           parking_desc:
             "Forget about parking hassles! This house offers free on-site parking, ensuring a stress-free arrival and departure.",
+          name: "Name",
+          email: "Email",
+          message: "Message",
+          address: "Address",
+          phone: "Call Us",
+          contact_email: "Send Your Mail",
+          send: "Send",
+          contact: "Contact Us",
         },
       },
       pl: {
@@ -65,7 +73,7 @@ i18n
             "ZANURZ SIĘ W NATURZE Z ZAPIERAJĄCYMI DECH W PIERSIACH WIDOKAMI W TYM SPOKOJNYM SCHRONISKU!",
           homepage_desc:
             "Budź się do zachwycających widoków. Odpręż się na werandzie i wdychaj świeże powietrze. Ten komfortowy dom zapewnia idealną ucieczkę dla tych, którzy szukają kontaktu z naturą.",
-          homepage_contact: "SKONTAKTUJ SIĘ Z NAMI",
+          homepage_contact: "Skontaktuj Się Z Nami",
           rooms_title: "Nasze Pokoje",
           rooms_subtitle:
             "Odnajdź swoją idealną oazę relaksu i odzyskaj energię, stworzoną specjalnie z myślą o tobie",
@@ -94,7 +102,14 @@ i18n
             "Dziel się swoimi przygodami i utrzymuj kontakt z bliskimi w domu dzięki naszemu bezpłatnemu Wi-Fi dostępnym w całym domu.",
           parking: "Bezpłatny parking",
           parking_desc:
-            "Zapomnij o kłopotach z parkowaniem! Dom oferuje bezpłatny parking na miejscu, zapewniając bezstresowy przyjazd i wyjazd.",
+            "Zapomnij o kłopotach z parkowaniem! Oferujemy bezpłatny parking na miejscu, zapewniając bezstresowy przyjazd i wyjazd.",
+          name: "Imię",
+          message: "Wiadomość",
+          address: "Adres",
+          phone: "Zadzwoń do Nas",
+          contact_email: "Wyślij Email",
+          send: "Wyślij",
+          contact: "Skontaktuj Się Z Nami",
         },
       },
     },

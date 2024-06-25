@@ -3,6 +3,7 @@ import MainSection from "./MainSection/MainSection";
 import RoomsSection from "./RoomsSection/RoomsSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import GallerySection from "./GallerySection/GallerySection";
+import ContactSection from "./ContactSection/ContactSection";
 
 function Homepage() {
   return (
@@ -11,7 +12,7 @@ function Homepage() {
       <RoomsSection />
       <ServicesSection />
       <GallerySection />
-      <div className="divider"></div>
+      <ContactSection />
     </div>
   );
 }
