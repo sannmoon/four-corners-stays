@@ -17,6 +17,7 @@ function MasonryGallery({ images }: Props) {
         columnsCountBreakPoints={{ 300: 2, 500: 3, 700: 4, 900: 6 }} //300 pixels we have 2 columns
       >
         <Masonry>{items}</Masonry>
+        <div className="overlay"> </div>
       </ResponsiveMasonry>
     </div>
   );

@@ -5,4 +5,16 @@
 .masonryGallery {
   height: 600px;
   overflow-y: scroll;
+
+  > div {
+    position: relative;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgb(243, 228, 218) 77%);
 }

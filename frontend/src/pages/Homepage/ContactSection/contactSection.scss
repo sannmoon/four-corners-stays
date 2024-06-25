@@ -1,0 +1,89 @@
+.contactSection {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(243, 228, 218),
+    rgba(238, 196, 145, 0.961)
+  );
+  padding-top: 150px;
+  flex-direction: row;
+  padding-bottom: 50px;
+
+  .topContact {
+    display: flex;
+    .contactForm {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      font-weight: bold;
+
+      button {
+        width: 130px;
+        height: 50px;
+        background-image: linear-gradient(
+          to right,
+          rgb(237, 140, 55),
+          #2cd787c1
+        );
+        border: none;
+        display: inline-block;
+        padding: 13px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 6px;
+        position: relative;
+        color: white;
+      }
+
+      > form {
+        max-width: 600px;
+        width: 100%;
+
+        > h1 {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .mapContact {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .bottomContact {
+    .bottomDetails {
+      margin: 100px;
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+
+      .infoBox {
+        background-color: #f9ecdc;
+        width: 200px;
+        font-size: x-small;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+
+        .infoBoxIcon {
+          svg {
+            height: 2.2rem;
+            fill: #cb802f;
+          }
+        }
+
+        .infoBoxContent {
+          .infoBoxTitle {
+            font-size: medium;
+          }
+
+          .infoBoxSubtitle {
+            font-size: 13px;
+            color: rgb(101, 99, 99);
+          }
+        }
+      }
+    }
+  }
+}

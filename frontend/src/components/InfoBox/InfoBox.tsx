@@ -12,8 +12,8 @@ function Services({ icon, name, description }: Props) {
     <div className="infoBox">
       <div className="infoBoxIcon">{icon}</div>
       <div className="infoBoxContent">
-        <h2 className="sliderTitle">{name}</h2>
-        <p className="sliderSubtitle">{description}</p>
+        <h2 className="infoBoxTitle">{name}</h2>
+        <p className="infoBoxSubtitle">{description}</p>
       </div>
     </div>
   );
