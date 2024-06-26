@@ -59,6 +59,7 @@ i18n
           contact_email: "Send Your Mail",
           send: "Send",
           contact: "Contact Us",
+          created: "Created By Sansanlicious",
         },
       },
       pl: {
@@ -110,6 +111,7 @@ i18n
           contact_email: "Wyślij Email",
           send: "Wyślij",
           contact: "Skontaktuj Się Z Nami",
+          created: "Stworzony Przez Sansanlicious",
         },
       },
     },

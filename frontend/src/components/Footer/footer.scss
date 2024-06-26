@@ -1,0 +1,57 @@
+.footerContainer {
+  background-color: rgb(20, 9, 0);
+  opacity: 0.9;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+
+  > div {
+    width: 250px;
+  }
+
+  .logoFooter {
+    > img {
+      width: 160px;
+      display: flex;
+    }
+  }
+
+  .iconsFooter {
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      .icon {
+        height: 30px;
+      }
+      .booking {
+      }
+
+      .airbnb {
+        margin: 0 20px;
+      }
+
+      .fb {
+        background-color: white;
+        border-radius: 3px;
+      }
+    }
+  }
+  .gitContainer {
+    a {
+      display: flex;
+      color: white;
+      justify-content: center;
+      font-size: 15px;
+      text-decoration: none;
+      line-height: 2;
+    }
+
+    .github {
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
