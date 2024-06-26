@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.scss";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import logo from "../../assets/logo.png";
 import airbnb from "../../assets/airbnb.svg";
 import booking from "../../assets/booking.svg";
@@ -30,7 +29,6 @@ function Footer() {
           target="_blank"
         >
           <img className="icon fb" src={fb} alt="FB" />
-          {/* <FacebookIcon /> */}
         </a>
       </div>
       <div className="gitContainer">

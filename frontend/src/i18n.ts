@@ -111,7 +111,7 @@ i18n
           contact_email: "Wyślij Email",
           send: "Wyślij",
           contact: "Skontaktuj Się Z Nami",
-          created: "Stworzony Przez Sansanlicious",
+          created: "Stworzono Przez Sansanlicious",
         },
       },
     },
