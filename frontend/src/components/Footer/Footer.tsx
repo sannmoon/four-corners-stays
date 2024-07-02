@@ -33,7 +33,7 @@ function Footer() {
       </div>
       <div className="gitContainer">
         <a
-          href="https://github.com/sansanlicious/four-corners-stays"
+          href="https://github.com/sannmoon/four-corners-stays.gits"
           target="_blank"
         >
           {t("created")}

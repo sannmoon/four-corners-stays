@@ -16,7 +16,7 @@ function MainSection() {
         <h2>{t("homepage_subtitle")}</h2>
         <h1>{t("homepage_title")}</h1>
         <p>{t("homepage_desc")}</p>
-        <button>{t("homepage_contact")}</button>
+        <button>{t("homepage_explore")}</button>
       </div>
     </div>
   );
