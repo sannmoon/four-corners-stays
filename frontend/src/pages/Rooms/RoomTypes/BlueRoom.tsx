@@ -39,7 +39,7 @@ function BlueRoom() {
         roomSize="18 m²"
         beds={[t("queen_bed"), t("bunk_bed")]}
         amenities={[
-          t("amenities10"),
+          t("amenities9"),
           t("amenities1"),
           t("amenities2"),
           t("amenities3"),
@@ -48,7 +48,6 @@ function BlueRoom() {
           t("amenities6"),
           t("amenities7"),
           t("amenities8"),
-          t("amenities9"),
         ]}
         occupancy={[t("adults_occupancy"), t("children_occupancy")]}
       />

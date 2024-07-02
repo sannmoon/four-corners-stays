@@ -70,16 +70,16 @@ function RoomGallery({ images }: Props) {
       {imageIndex !== null && (
         <div className="fullSlider" ref={ref}>
           <div className="arrow" onClick={() => changeSlide("left")}>
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="left arrow" />
           </div>
           <div className="imgContainer">
-            <img src={images[imageIndex]} alt="" />
+            <img src={images[imageIndex]} alt="images" />
           </div>
           <div className="arrow">
             <img
               src={arrow}
               className="right"
-              alt=""
+              alt="right arrow"
               onClick={() => changeSlide("right")}
             />
           </div>
@@ -94,14 +94,18 @@ function RoomGallery({ images }: Props) {
         </div>
       )}
       <div className="mainImage">
-        <img src={images[0]} alt="" onClick={() => setImageIndex(0)} />
+        <img
+          src={images[0]}
+          alt="main image"
+          onClick={() => setImageIndex(0)}
+        />
       </div>
       <div className="imagesGallery">
         {images.slice(1).map((image, index) => (
           <img
             onClick={() => setImageIndex(index + 1)}
             src={image}
-            alt=""
+            alt="room images"
             key={index}
           />
         ))}

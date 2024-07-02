@@ -36,7 +36,6 @@ function SunnyRoom() {
           t("amenities6"),
           t("amenities7"),
           t("amenities8"),
-          t("amenities9"),
         ]}
         occupancy={[t("children_occupancy")]}
       />

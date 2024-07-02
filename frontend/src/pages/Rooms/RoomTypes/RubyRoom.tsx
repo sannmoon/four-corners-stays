@@ -46,7 +46,6 @@ function RubyRoom() {
           t("amenities6"),
           t("amenities7"),
           t("amenities8"),
-          t("amenities9"),
         ]}
         occupancy={[t("adults_occupancy"), t("child_occupancy")]}
       />
