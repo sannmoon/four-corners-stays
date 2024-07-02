@@ -22,7 +22,6 @@ function BohoRoom() {
         description={t("boho_desc")}
         roomSize={"21 m²"}
         amenities={[
-          t("amenities10"),
           t("amenities1"),
           t("amenities2"),
           t("amenities3"),
@@ -30,6 +29,7 @@ function BohoRoom() {
           t("amenities5"),
           t("amenities6"),
           t("amenities7"),
+          t("amenities10"),
           t("amenities8"),
         ]}
         beds={[t("queen_bed"), t("single_beds")]}
