@@ -1,0 +1,68 @@
+.roomGallery {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: bisque;
+  padding: 40px;
+
+  .fullSlider {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(14, 8, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+    .arrow {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+
+        &.right {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .mainImage {
+    flex: 1;
+    margin: 10px;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  .imagesGallery {
+    flex: 1;
+    max-height: 970px;
+    overflow-y: scroll;
+    > img {
+      margin: 10px;
+      height: 200px;
+      width: calc(33.33333% - 20px); //100%/3 3 columns
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}

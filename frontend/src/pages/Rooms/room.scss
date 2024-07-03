@@ -1,0 +1,45 @@
+.rooms {
+  .tabs {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 40px;
+
+    > div {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: bisque;
+      border-radius: 5px;
+      margin-bottom: 100px;
+    }
+
+    > div:hover,
+    div.active {
+      background-color: #f2934a;
+    }
+  }
+  .footerRooms {
+    font-size: 20px;
+    padding-left: 50px;
+
+    .bookingInfo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .phoneIconRooms {
+        height: 20px;
+        width: 20px;
+        color: #fffdfc;
+        border: 2px solid;
+        border-radius: 50%;
+        padding: 4px;
+        background-color: #a35c26;
+        text-align: center;
+      }
+    }
+  }
+}
