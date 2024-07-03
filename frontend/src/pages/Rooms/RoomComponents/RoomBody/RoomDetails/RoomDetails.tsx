@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "./roomDetails.scss";
 
 type Props = {
   header: string;
@@ -8,7 +9,7 @@ type Props = {
 
 function RoomDetails({ header, list }: Props) {
   return (
-    <div>
+    <div className="roomDetails">
       <h2>{header}</h2>
       <ul>
         {list.map((item) => (
