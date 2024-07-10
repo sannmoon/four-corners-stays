@@ -1,0 +1,88 @@
+.nearbyAttractions {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding-top: 80px;
+
+  .mainAttraction {
+    position: relative;
+    .highlight {
+      width: 1000px;
+      border-bottom-right-radius: 4em;
+      border-top-left-radius: 4em;
+      box-shadow: 5px 5px 10px #b76206;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3 {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 3px solid #fbf0df;
+      margin-left: -50px;
+    }
+
+    .circle1 {
+      position: absolute;
+      top: -10px;
+    }
+
+    .circle2 {
+      position: absolute;
+      top: calc(50% - 220px);
+    }
+
+    .circle3 {
+      position: absolute;
+      bottom: 220px;
+    }
+
+    .headerAttractions {
+      margin-top: 90px;
+
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 40px;
+      }
+      > p {
+        margin-top: 60px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .react-multi-carousel-list {
+    padding-bottom: 100px;
+  }
+
+  .slider {
+    .react-multiple-carousel__arrow--left {
+      left: calc(0% + 1px);
+    }
+    .react-multiple-carousel__arrow--right {
+      right: calc(0% + 1px);
+    }
+    .react-multiple-carousel__arrow {
+      top: 40%;
+    }
+  }
+  .otherAttractions {
+    padding: 0 50px;
+    gap: 124px;
+    align-items: center;
+
+    h1 {
+      margin: 90px 90px;
+      font-size: 40px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
