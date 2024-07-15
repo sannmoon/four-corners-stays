@@ -6,6 +6,10 @@
   .servicesTitle {
     color: #089955c1;
     font-size: 40px;
+
+    @include sm {
+      font-size: 30px;
+    }
   }
 
   .topSection {

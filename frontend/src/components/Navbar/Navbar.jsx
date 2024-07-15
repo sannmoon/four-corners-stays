@@ -9,8 +9,6 @@ function Navbar() {
   const { t } = useTranslation();
   const location = useLocation();
 
-  console.log(location);
-
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {

@@ -1,3 +1,5 @@
+@import "../../../../responsive.scss";
+
 .roomBox {
   img {
     width: 380px;
@@ -15,5 +17,19 @@
   .roomBoxSubtitle {
     margin-top: 0;
     color: rgb(192, 120, 89);
+  }
+
+  @include sm {
+    img {
+      width: 150px;
+      height: 200px;
+    }
+    .roomBoxTitle {
+      font-size: 18px;
+    }
+
+    .roomBoxSubtitle {
+      font-size: 14px;
+    }
   }
 }
