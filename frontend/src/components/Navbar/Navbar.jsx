@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { useState } from "react";
@@ -7,6 +7,9 @@ import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  console.log(location);
 
   const [navbar, setNavbar] = useState(false);
 
@@ -19,9 +22,9 @@ function Navbar() {
   };
 
   window.addEventListener("scroll", changeBackground);
-
+  const isHomepage = location.pathname === "/";
   return (
-    <div className={navbar ? "navbar active" : "navbar"}>
+    <div className={navbar || !isHomepage ? "navbar active" : "navbar"}>
       <img src={logo} alt="logo" />
       <div className="navRight">
         <div className="navLinks">

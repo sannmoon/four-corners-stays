@@ -1,5 +1,13 @@
+@import "../../responsive.scss";
+
 .map {
   width: 550px;
   height: 700px;
   border-radius: 20px;
+
+  @include sm {
+    width: 350px;
+    height: 570px;
+    border-radius: 15px;
+  }
 }

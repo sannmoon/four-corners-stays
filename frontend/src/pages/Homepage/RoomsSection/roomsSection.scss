@@ -1,4 +1,10 @@
+@import "../../../responsive.scss";
+
 .roomsSection {
+  @include sm {
+    display: none;
+  }
+
   .roomHeader {
     margin-top: 50px;
     padding-left: 50px;

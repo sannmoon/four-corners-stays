@@ -1,0 +1,19 @@
+@mixin sm {
+  //apply styles to your CSS that will only be applied on screens smaller than 738px wide.
+  @media (max-width: 738px) {
+    //targets screens w/ max-width of 738 pixels. This mixin targets styles based on screen width, hence, vertical in this case
+    @content; // mixin's keyword -acts as a placeholder. Anything you write after including the mixin will be inserted here.
+  }
+}
+
+@mixin md {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

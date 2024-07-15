@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .navbar {
   position: fixed;
   display: flex;
@@ -7,6 +9,10 @@
   transition: all 0.3s;
   z-index: 1001;
   justify-content: space-between;
+
+  @include sm {
+    display: none;
+  }
 
   &.active {
     background-color: rgb(20, 9, 0);

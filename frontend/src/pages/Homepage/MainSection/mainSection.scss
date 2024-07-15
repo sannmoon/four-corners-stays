@@ -1,3 +1,5 @@
+@import "../../../responsive.scss";
+
 .mainSection {
   display: flex;
   justify-content: center;
@@ -8,7 +10,6 @@
 
   .pageHeader {
     width: 1170px;
-    height: 251px;
     color: white;
 
     h2 {
@@ -36,6 +37,30 @@
       position: relative;
       color: white;
       text-transform: uppercase;
+    }
+  }
+
+  @include sm {
+    flex-direction: column;
+    padding-top: 50px;
+
+    .pageHeader {
+      width: 400px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+        padding: 35px;
+      }
+
+      button {
+        width: 160px;
+        height: 40px;
+        font-size: 13px;
+      }
     }
   }
 }

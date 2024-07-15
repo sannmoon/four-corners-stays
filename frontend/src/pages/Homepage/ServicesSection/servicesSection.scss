@@ -1,3 +1,5 @@
+@import "../../../responsive.scss";
+
 .servicesSection {
   text-align: center;
 
@@ -10,11 +12,21 @@
     display: flex;
     justify-content: center;
     padding: 50px;
+    gap: 40px;
+
+    @include sm {
+      flex-direction: column;
+    }
   }
 
   .bottomSection {
     display: flex;
     justify-content: center;
     padding: 50px;
+    gap: 40px;
+
+    @include sm {
+      flex-direction: column;
+    }
   }
 }

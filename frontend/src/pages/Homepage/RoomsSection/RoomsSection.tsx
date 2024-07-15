@@ -6,7 +6,7 @@ import Sunny from "../../../assets/gallery/Sunny.jpeg";
 import BlueSerenity from "../../../assets/gallery/BlueSerenity.jpg";
 import Loft from "../../../assets/gallery/Loft.jpeg";
 import Boho from "../../../assets/gallery/Boho.jpeg";
-import RoomBox from "./RoomBox./RoomBox";
+import RoomBox from "./RoomBox/RoomBox";
 
 function RoomsSection() {
   const { t } = useTranslation();
