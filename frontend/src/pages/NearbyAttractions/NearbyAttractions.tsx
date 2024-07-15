@@ -72,7 +72,7 @@ function NearbyAttractions() {
     },
     {
       image: Carp,
-      title: "Karpia Dolina",
+      title: "Dolina Karpia",
       description: t("carp"),
       link: "http://dolinakarpia.org/",
     },
