@@ -72,7 +72,7 @@ function NearbyAttractions() {
     },
     {
       image: Carp,
-      title: "Carp Valley",
+      title: "Karpia Dolina",
       description: t("carp"),
       link: "http://dolinakarpia.org/",
     },
@@ -80,12 +80,7 @@ function NearbyAttractions() {
 
   return (
     <PageContainer>
-      <div
-        className="nearbyAttractions"
-        style={{
-          background: `rgb(255, 248, 237)`,
-        }}
-      >
+      <div className="nearbyAttractions">
         <div className="mainAttraction">
           <div className="mainAttractionImage">
             <img src={Energylandia} alt="Energylandia" className="highlight" />
