@@ -1,8 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import SliderItem from "./SliderItem/SliderItem";
 import "./slider.scss";
-import React, { Component } from "react";
+import { PropsWithChildren } from "react";
 
 type Item = {
   image: string;
@@ -11,44 +10,48 @@ type Item = {
 };
 
 type Props = {
-  items: Item[];
+  responsive?: Record<
+    string,
+    {
+      breakpoint: { max: number; min: number };
+      items: number;
+    }
+  >;
 };
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 3,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+export default function SimpleSlider({
+  responsive,
+  children,
+}: PropsWithChildren<Props>) {
+  const responsiveOptions = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+    ...responsive,
+  };
 
-export default function SimpleSlider({ items }) {
   return (
     <Carousel
       swipeable
       draggable
       keyBoardControl={true}
-      responsive={responsive}
+      responsive={responsiveOptions}
       className="slider"
     >
-      {items.map((item) => (
-        <SliderItem
-          image={item.image}
-          title={item.title}
-          subtitle={item.subtitle}
-        />
-      ))}
+      {children}
     </Carousel>
   );
 }

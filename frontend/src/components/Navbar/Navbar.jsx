@@ -27,7 +27,7 @@ function Navbar() {
         <div className="navLinks">
           <Link to="/">{t("nav_home")}</Link>
           <Link to="/rooms">{t("nav_rooms")}</Link>
-          <Link to="/services">{t("nav_services")}</Link>
+          <Link to="/attractions">{t("nav_attractions")}</Link>
           <Link to="/about"> {t("nav_about")} </Link>
           <Link to="/contact"> {t("nav_contact")} </Link>
         </div>

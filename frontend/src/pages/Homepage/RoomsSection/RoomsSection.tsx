@@ -6,6 +6,7 @@ import Sunny from "../../../assets/gallery/Sunny.jpeg";
 import BlueSerenity from "../../../assets/gallery/BlueSerenity.jpg";
 import Loft from "../../../assets/gallery/Loft.jpeg";
 import Boho from "../../../assets/gallery/Boho.jpeg";
+import RoomBox from "./RoomBox./RoomBox";
 
 function RoomsSection() {
   const { t } = useTranslation();
@@ -40,7 +41,13 @@ function RoomsSection() {
         <h2 className="roomsSubtitle">{t("rooms_subtitle")}</h2>
       </div>
       <div className="roomCards">
-        <Slider items={items} />
+        {items.map((item) => (
+          <RoomBox
+            image={item.image}
+            title={item.title}
+            subtitle={item.subtitle}
+          />
+        ))}
       </div>
     </div>
   );

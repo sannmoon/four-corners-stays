@@ -13,7 +13,7 @@ i18n
         translation: {
           nav_home: "Home",
           nav_rooms: "Rooms",
-          nav_services: "Services",
+          nav_attractions: "Nearby Attractions",
           nav_about: "About",
           nav_contact: "Contact",
           homepage_subtitle: "COZY RETREAT",
@@ -94,13 +94,35 @@ i18n
             "Immerse yourself in the warm embrace of Boho Rose. This inviting space features a bohemian flair with a touch of sophistication, accentuated by rich rust pink hues and luxurious textures. Unwind in a world of comfort and creativity.",
           ruby_desc:
             "Indulge in urban luxury in the Ruby Loft. This plush upstairs room boasts a private balcony with breathtaking city views, perfect for enjoying an evening cocktail with a view. Immerse yourself in the rich red theme and modern amenities, creating a truly unforgettable experience.",
+          attractions_header: "Explore the Area:",
+          attractions_header2:
+            "Welcome to Przeciszów! Discover some wonderful places to visit and things to do during your stay:",
+          attractions_header3: "Popular Destinations",
+          energylandia:
+            "Experience the excitement of Poland's largest amusement park, featuring rides and attractions for all ages.",
+          zatorland:
+            "An entertaining theme park with various attractions including a dinosaur park, insect park, and mythological park.",
+          tenczyn:
+            " A historic castle ruin offering scenic views and a glimpse into the medieval architecture and history of the region.",
+          inwald:
+            "A family-friendly amusement park featuring miniature landmarks, a medieval castle, and a variety of rides.",
+          museumlesser:
+            "A cultural institution showcasing the rich history and heritage of the Western Lesser Poland region.",
+          auschwitz:
+            "The solemn memorial and museum at the site of the former Nazi concentration and extermination camps, preserving the memory of the Holocaust victims.",
+          zamek:
+            "A historic site featuring an underground museum and a medieval castle with exhibitions on the region's history",
+          johnpaul:
+            "A museum dedicated to the life and legacy of Pope John Paul II, located in his family home.",
+          carp: "A picturesque region known for its serene landscapes, rich biodiversity, and traditional carp fish farming.",
+          explore_now: "Explore Now",
         },
       },
       pl: {
         translation: {
           nav_home: "Strona głòwna",
           nav_rooms: "Pokoje",
-          nav_services: "Usługi",
+          nav_attractions: "Atrakcje w Pobliżu",
           nav_about: "O nas",
           nav_contact: "Kontakt",
           homepage_subtitle: "PRZYTULNE SCHRONISKO",
@@ -180,6 +202,28 @@ i18n
             "Zanurz się w ciepłym objęciu Boho Rose. To zapraszające miejsce charakteryzuje się boho stylem z nutą szykowności, podkreślonej przez bogate odcienie rdzawego różu i luksusowe tekstury. Zrelaksuj się w świecie wygody i kreatywności.",
           ruby_desc:
             "Oddaj się miejskiemu luksusowi w Ruby Loft. Ten przytulny pokój na piętrze posiada prywatny balkon z zapierającym dech w piersiach widokiem na miasto, idealny do delektowania się wieczornym drinkiem przy widoku. Zanurz się w bogatej czerwieni tematu i nowoczesnych udogodnień, tworzących naprawdę niezapomniane przeżycie.",
+          attractions_header: "Odkrywaj okolicę:",
+          attractions_header2:
+            "Witamy w Przeciszowie! Odkryj wspaniałe miejsca do odwiedzenia i rzeczy do zrobienia podczas swojego pobytu:",
+          attractions_header3: "Popularne Destynacje",
+          energylandia:
+            "Doświadcz emocji największego parku rozrywki w Polsce, oferującego atrakcje dla wszystkich grup wiekowych.",
+          zatorland:
+            "Rozrywkowy park tematyczny z różnorodnymi atrakcjami, w tym parkiem dinozaurów, parkiem owadów i parkiem mitologicznym.",
+          tenczyn:
+            "Historyczne ruiny zamku oferujące malownicze widoki oraz wgląd w średniowieczną architekturę i historię regionu.",
+          inwald:
+            "Przyjazny rodzinom park rozrywki z miniaturowymi zabytkami, średniowiecznym zamkiem i różnorodnymi atrakcjami.",
+          museumlesser:
+            "Instytucja kulturalna prezentująca bogatą historię i dziedzictwo regionu Małopolski Zachodniej.",
+          auschwitz:
+            "Uroczysty pomnik i muzeum na terenie byłych nazistowskich obozów koncentracyjnych i zagłady, zachowujące pamięć o ofiarach Holokaustu.",
+          zamek:
+            "Historyczne miejsce z podziemnym muzeum i średniowiecznym zamkiem z wystawami na temat historii regionu.",
+          johnpaul:
+            "Muzeum poświęcone życiu i dziedzictwu papieża Jana Pawła II, znajdujące się w jego rodzinnym domu.",
+          carp: "Malowniczy region znany z spokojnych krajobrazów, bogatej bioróżnorodności i tradycyjnej hodowli karpia.",
+          explore_now: "Odkrywaj Teraz",
         },
       },
     },

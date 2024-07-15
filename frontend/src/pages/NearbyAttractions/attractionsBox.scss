@@ -1,0 +1,50 @@
+.attractionsBox {
+  border: none;
+  box-shadow: 0px 0px 10px rgb(165, 109, 5);
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  margin-top: 10px;
+  max-width: 300px;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  .attractionsBoxImage {
+    text-align: center;
+    img {
+      width: 300px;
+      height: 490px;
+      object-fit: cover;
+      border-top-left-radius: 400px;
+      border-top-right-radius: 400px;
+    }
+  }
+
+  .attractionsBoxContent {
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    .attractionsBoxTitle {
+      text-align: center;
+    }
+
+    .attractionsBoxSub {
+      color: rgb(105, 105, 105);
+      padding: 10px 15px;
+      flex-grow: 1;
+    }
+
+    .btn {
+      display: block;
+      padding: 10px 20px;
+      background-color: #508505;
+      border-color: #a06205;
+      color: white;
+    }
+  }
+}
