@@ -45,7 +45,7 @@
         width: 100%;
 
         @include sm {
-          width: 320px;
+          width: 280px;
           margin-bottom: 30px;
         }
 
@@ -71,6 +71,9 @@
 
       @include sm {
         flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-top: 40px;
       }
 
       .infoBox {
@@ -80,10 +83,6 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
-
-        // @include sm {
-        //   flex-direction: column;
-        // }
 
         .infoBoxIcon {
           svg {

@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .rooms {
   .tabs {
     display: flex;
@@ -39,6 +41,27 @@
         padding: 4px;
         background-color: #a35c26;
         text-align: center;
+      }
+    }
+  }
+
+  @include sm {
+    .tabs {
+      font-size: 11px;
+      margin-top: 0;
+    }
+
+    .footerRooms {
+      font-size: 16px;
+      padding-left: 20px;
+
+      .bookingInfo {
+        gap: 5px;
+
+        .phoneIconRooms {
+          height: 17px;
+          width: 17px;
+        }
       }
     }
   }

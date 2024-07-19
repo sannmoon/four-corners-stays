@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .nearbyAttractions {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -78,12 +80,58 @@
     align-items: center;
 
     h1 {
-      margin: 90px 90px;
+      margin: 90px 0;
       font-size: 40px;
     }
 
     a {
       text-decoration: none;
+    }
+  }
+
+  @include sm {
+    .mainAttraction {
+      .highlight {
+        width: 300px;
+      }
+
+      .circle1,
+      .circle2,
+      .circle3 {
+        width: 70px;
+        height: 70px;
+      }
+
+      .circle1 {
+        position: absolute;
+        top: -10px;
+      }
+
+      .circle2 {
+        position: absolute;
+        top: calc(50% - 130px);
+      }
+
+      .circle3 {
+        position: absolute;
+        top: 120px;
+      }
+
+      .headerAttractions {
+        h1 {
+          font-size: 25px;
+        }
+        > p {
+          font-size: 15px;
+          margin: 10px;
+        }
+      }
+    }
+
+    .otherAttractions {
+      h1 {
+        font-size: 25px;
+      }
     }
   }
 }
