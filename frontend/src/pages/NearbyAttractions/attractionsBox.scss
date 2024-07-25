@@ -1,10 +1,12 @@
+@import "../../responsive.scss";
+
 .attractionsBox {
   border: none;
   box-shadow: 0px 0px 10px rgb(165, 109, 5);
   border-top-left-radius: 400px;
   border-top-right-radius: 400px;
   margin-top: 10px;
-  max-width: 300px;
+  max-width: 250px;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   display: flex;
@@ -13,11 +15,15 @@
   .attractionsBoxImage {
     text-align: center;
     img {
-      width: 300px;
+      width: 100%;
       height: 490px;
       object-fit: cover;
       border-top-left-radius: 400px;
       border-top-right-radius: 400px;
+
+      @include sm {
+        height: 340px;
+      }
     }
   }
 
@@ -35,7 +41,7 @@
 
     .attractionsBoxSub {
       color: rgb(105, 105, 105);
-      padding: 10px 15px;
+      padding: 0 15px;
       flex-grow: 1;
     }
 

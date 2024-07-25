@@ -70,7 +70,7 @@ function RoomGallery({ images }: Props) {
       {imageIndex !== null && (
         <div className="fullSlider" ref={ref}>
           <div className="arrow" onClick={() => changeSlide("left")}>
-            <img src={arrow} alt="left arrow" />
+            <img src={arrow} className="left" alt="left arrow" />
           </div>
           <div className="imgContainer">
             <img src={images[imageIndex]} alt="images" />

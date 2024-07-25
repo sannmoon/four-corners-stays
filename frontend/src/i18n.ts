@@ -6,7 +6,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     lng: "en",
     resources: {
       en: {
@@ -14,7 +14,6 @@ i18n
           nav_home: "Home",
           nav_rooms: "Rooms",
           nav_attractions: "Nearby Attractions",
-          nav_about: "About",
           nav_contact: "Contact",
           homepage_subtitle: "COZY RETREAT",
           homepage_title:
@@ -123,7 +122,6 @@ i18n
           nav_home: "Strona głòwna",
           nav_rooms: "Pokoje",
           nav_attractions: "Atrakcje w Pobliżu",
-          nav_about: "O nas",
           nav_contact: "Kontakt",
           homepage_subtitle: "PRZYTULNE SCHRONISKO",
           homepage_title:

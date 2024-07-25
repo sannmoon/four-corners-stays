@@ -1,7 +1,8 @@
+@import "../../../responsive.scss";
+
 .roomsSection {
   .roomHeader {
     margin-top: 50px;
-    padding-left: 50px;
     text-align: center;
 
     .roomsTitle {
@@ -12,10 +13,34 @@
       font-size: 24px;
     }
   }
+
+  @include sm {
+    .roomHeader {
+      .roomsTitle {
+        font-size: 27px;
+      }
+      .roomsSubtitle {
+        font-size: 16px;
+      }
+    }
+  }
 }
 .roomCards {
-  padding: 100px 30px 30px 30px;
+  padding: 100px 15px 15px 15px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 15px;
+
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @include sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }

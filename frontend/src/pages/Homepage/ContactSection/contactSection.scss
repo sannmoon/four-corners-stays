@@ -1,3 +1,5 @@
+@import "../../../responsive.scss";
+
 .contactSection {
   background-image: linear-gradient(
     to bottom,
@@ -10,6 +12,10 @@
 
   .topContact {
     display: flex;
+
+    @include sm {
+      flex-direction: column;
+    }
     .contactForm {
       display: flex;
       flex: 1;
@@ -38,6 +44,23 @@
         max-width: 600px;
         width: 100%;
 
+        @include lg {
+          width: 500px;
+        }
+
+        @include md {
+          width: 400px;
+        }
+
+        @include sm-md {
+          width: 330px;
+        }
+
+        @include sm {
+          width: 280px;
+          margin-bottom: 30px;
+        }
+
         > h1 {
           margin-top: 0;
         }
@@ -57,6 +80,17 @@
       display: flex;
       text-align: center;
       justify-content: space-evenly;
+
+      @include md {
+        gap: 30px;
+      }
+
+      @include sm {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-top: 40px;
+      }
 
       .infoBox {
         background-color: #f9ecdc;
