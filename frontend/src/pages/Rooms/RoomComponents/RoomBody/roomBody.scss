@@ -8,6 +8,7 @@
   gap: 300px;
   height: auto;
   font-size: 20px;
+
   .titleRoomBody {
     flex: 3;
 
@@ -30,17 +31,22 @@
   .detailsRoomBody {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px 60px;
-    padding: 0 20px;
+    gap: 0px 25px;
+    padding: 0 5px;
+  }
+
+  @include lg {
+    gap: 0;
+    padding: 0;
   }
 
   @include sm {
     display: inline;
     font-size: 15px;
     padding: 0 10px;
+  }
 
-    .titleRoomBody {
-      padding: 0 23px;
-    }
+  .titleRoomBody {
+    padding: 0 23px;
   }
 }

@@ -30,6 +30,13 @@
   text-align: center;
   display: flex;
   justify-content: space-around;
+  gap: 15px;
+
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
   @include sm {
     display: grid;

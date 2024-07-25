@@ -10,6 +10,22 @@
   z-index: 1001;
   justify-content: space-around;
 
+  @include lg {
+    .langSelector {
+      .langIcon {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  @include md {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
   @include sm {
     .langSelector {
       display: none;
@@ -42,10 +58,18 @@
     }
   }
 
-  img {
+  .logo {
     left: 0;
     width: 300px;
     transition: all 0.3s;
+
+    @include md {
+      width: 170px;
+    }
+
+    @include sm {
+      width: 300px;
+    }
   }
 
   .navRight {
@@ -56,10 +80,15 @@
       position: static;
       right: 0;
       text-decoration: none;
-      margin: 0px 350px;
       font-weight: 600;
       font-size: 25px;
 
+      @include lg {
+        font-size: 20px;
+      }
+      @include md {
+        font-size: 17px;
+      }
       @include sm {
         display: none;
       }
@@ -70,6 +99,14 @@
         margin: 200px 10px;
         padding: 20px 20px;
         color: rgb(251, 237, 237);
+
+        @include lg {
+          margin: 0;
+        }
+
+        @include md {
+          padding: 20px 10px;
+        }
 
         &:hover {
           scale: 1.05;
@@ -98,14 +135,14 @@
       top: 79px;
       width: 70%;
       right: -70%; //adjust according to the "width"
-      background-color: black;
+      background-color: rgb(20, 9, 0);
       color: white;
       height: 100vh;
       transition: all 0.4s ease;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 75px;
+      padding-top: 49px;
       font-size: 25px;
       gap: 70px;
 

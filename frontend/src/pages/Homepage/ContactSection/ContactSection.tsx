@@ -36,7 +36,7 @@ function ContactSection() {
   };
 
   return (
-    <div className="contactSection">
+    <div id="contact" className="contactSection">
       <div className="topContact">
         <div className="contactForm">
           <form onSubmit={handleSubmit(onSubmit, () => {})}>

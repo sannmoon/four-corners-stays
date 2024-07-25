@@ -7,11 +7,14 @@ import RubyRoom from "./RoomTypes/RubyRoom";
 import { useTranslation } from "react-i18next";
 import PageContainer from "../../components/PageContainer/PageContainer";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { useSearchParams } from "react-router-dom";
 
 function Rooms() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
+  const queryParamTab = searchParams.get("tab");
 
-  const [selectedTab, setSelectedTab] = useState("sunny");
+  const [selectedTab, setSelectedTab] = useState(queryParamTab ?? "sunny");
 
   return (
     <PageContainer>
@@ -36,7 +39,7 @@ function Rooms() {
             {t("boho_title")}
           </div>
           <div
-            className={selectedTab === "ruby" ? "active" : ""}
+            className={selectedTab === "loft" ? "active" : ""}
             onClick={() => setSelectedTab("loft")}
           >
             {t("loft_title")}

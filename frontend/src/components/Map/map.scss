@@ -5,6 +5,16 @@
   height: 700px;
   border-radius: 20px;
 
+  @include lg {
+    width: 450px;
+    height: 620px;
+  }
+
+  @include md {
+    width: 400px;
+    height: 620px;
+  }
+
   @include sm {
     width: 290px;
     height: 530px;

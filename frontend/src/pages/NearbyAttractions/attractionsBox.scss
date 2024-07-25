@@ -20,6 +20,10 @@
       object-fit: cover;
       border-top-left-radius: 400px;
       border-top-right-radius: 400px;
+
+      @include sm {
+        height: 340px;
+      }
     }
   }
 
@@ -37,7 +41,7 @@
 
     .attractionsBoxSub {
       color: rgb(105, 105, 105);
-      padding: 10px 15px;
+      padding: 0 15px;
       flex-grow: 1;
     }
 
