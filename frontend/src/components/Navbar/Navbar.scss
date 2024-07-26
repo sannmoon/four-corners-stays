@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .navbar {
   position: fixed;
   display: flex;
@@ -6,12 +8,42 @@
   align-items: center;
   transition: all 0.3s;
   z-index: 1001;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  @include lg {
+    .langSelector {
+      .langIcon {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  @include md {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  @include sm {
+    .langSelector {
+      display: none;
+    }
+  }
 
   &.active {
     background-color: rgb(20, 9, 0);
     height: 69px;
     padding: 5px;
+
+    @include sm {
+      .navRight {
+        .menuIcon {
+          display: inline;
+        }
+      }
+    }
 
     img {
       width: 160px;
@@ -26,37 +58,111 @@
     }
   }
 
-  img {
+  .logo {
     left: 0;
     width: 300px;
     transition: all 0.3s;
+
+    @include md {
+      width: 170px;
+    }
+
+    @include sm {
+      width: 300px;
+    }
   }
 
   .navRight {
     display: flex;
     align-items: center;
-    margin-right: 200px;
-  }
 
-  .navLinks {
-    position: static;
-    right: 0;
-    text-decoration: none;
-    margin: 0px 60px;
-    font-weight: 600;
-    font-size: 25px;
-
-    a {
+    .navLinks {
+      position: static;
       right: 0;
       text-decoration: none;
-      margin: 200px 10px;
-      padding: 20px 20px;
-      color: rgb(251, 237, 237);
+      font-weight: 600;
+      font-size: 25px;
 
-      &:hover {
-        scale: 1.05;
-        background-color: black;
-        border-radius: 10px;
+      @include lg {
+        font-size: 20px;
+      }
+      @include md {
+        font-size: 17px;
+      }
+      @include sm {
+        display: none;
+      }
+
+      a {
+        right: 0;
+        text-decoration: none;
+        margin: 200px 10px;
+        padding: 20px 20px;
+        color: rgb(251, 237, 237);
+
+        @include lg {
+          margin: 0;
+        }
+
+        @include md {
+          padding: 20px 10px;
+        }
+
+        &:hover {
+          scale: 1.05;
+          background-color: black;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .menuIcon {
+      display: none;
+      z-index: 9999;
+
+      img {
+        width: 39px;
+        height: 39px;
+        cursor: pointer;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+    .menu {
+      position: absolute; //🧡
+      top: 79px;
+      width: 70%;
+      right: -70%; //adjust according to the "width"
+      background-color: rgb(20, 9, 0);
+      color: white;
+      height: 100vh;
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 49px;
+      font-size: 25px;
+      gap: 70px;
+
+      &.active {
+        right: 0;
+      }
+
+      @include sm {
+        .langContainer {
+          .languageSwitch {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        a {
+          display: initial;
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }

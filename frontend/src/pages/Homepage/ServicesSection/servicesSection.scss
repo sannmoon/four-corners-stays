@@ -1,20 +1,39 @@
+@import "../../../responsive.scss";
+
 .servicesSection {
   text-align: center;
 
   .servicesTitle {
     color: #089955c1;
     font-size: 40px;
+
+    @include sm {
+      font-size: 30px;
+    }
   }
 
   .topSection {
     display: flex;
     justify-content: center;
     padding: 50px;
+    gap: 40px;
+
+    @include sm {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   .bottomSection {
     display: flex;
     justify-content: center;
     padding: 50px;
+    gap: 40px;
+
+    @include sm {
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 0;
+    }
   }
 }

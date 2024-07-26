@@ -1,5 +1,19 @@
+@import "../../responsive.scss";
+
 .pageContainer {
   max-width: 1680px;
   margin: 0 auto;
   padding-top: 160px;
+
+  @include lg {
+    max-width: 1200px;
+  }
+
+  @include md {
+    max-width: 1000px;
+  }
+
+  @include sm {
+    padding-top: 45px;
+  }
 }

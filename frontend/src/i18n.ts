@@ -6,7 +6,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     lng: "en",
     resources: {
       en: {
@@ -14,7 +14,6 @@ i18n
           nav_home: "Home",
           nav_rooms: "Rooms",
           nav_attractions: "Nearby Attractions",
-          nav_about: "About",
           nav_contact: "Contact",
           homepage_subtitle: "COZY RETREAT",
           homepage_title:
@@ -116,6 +115,8 @@ i18n
             "A museum dedicated to the life and legacy of Pope John Paul II, located in his family home.",
           carp: "A picturesque region known for its serene landscapes, rich biodiversity, and traditional carp fish farming.",
           explore_now: "Explore Now",
+          api_email_delivered: "Message has been delivered",
+          api_email_not_delivered: "Message has been delivered",
         },
       },
       pl: {
@@ -123,7 +124,6 @@ i18n
           nav_home: "Strona głòwna",
           nav_rooms: "Pokoje",
           nav_attractions: "Atrakcje w Pobliżu",
-          nav_about: "O nas",
           nav_contact: "Kontakt",
           homepage_subtitle: "PRZYTULNE SCHRONISKO",
           homepage_title:
