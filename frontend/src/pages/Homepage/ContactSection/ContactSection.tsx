@@ -15,6 +15,7 @@ import { LabelledTextarea } from "../../../components/LabelledTextarea/LabelledT
 function ContactSection() {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
+  const [apiEmailResponse, setApiEmailResponse] = useState("");
 
   const schema = yup.object().shape({
     name: yup.string().required(),
@@ -32,6 +33,14 @@ function ContactSection() {
 
   const onSubmit = async (data: any) => {
     setLoading(true);
+    const apiResponse = await (
+      await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        body: JSON.stringify(data),
+      })
+    ).json();
+
+    setApiEmailResponse(apiResponse);
     setLoading(false);
   };
 
@@ -48,7 +57,8 @@ function ContactSection() {
               {...register("message")}
               rows={21}
             />
-            <button type="submit">{t("send")}</button>
+            <button type="submit">{loading ? "Sending.." : t("send")}</button>
+            <p>{apiEmailResponse && <span>{t(apiEmailResponse)}</span>}</p>
           </form>
         </div>
         <div className="mapContact">
