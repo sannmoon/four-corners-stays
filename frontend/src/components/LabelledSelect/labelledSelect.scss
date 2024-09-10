@@ -1,0 +1,24 @@
+.form-select {
+  border-radius: 2px;
+  border: 1px solid #acadb0;
+  border-radius: 6px;
+  height: 50px;
+  width: auto;
+  font-size: medium;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.labelled-select {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-errors {
+  color: rgb(192, 5, 5);
+  opacity: 70%;
+  font-size: small;
+  margin: 0%;
+  padding-top: 7px;
+}

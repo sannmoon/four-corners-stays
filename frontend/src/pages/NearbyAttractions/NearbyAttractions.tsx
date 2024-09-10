@@ -106,6 +106,7 @@ function NearbyAttractions() {
           <Slider>
             {attractions.map((attraction) => (
               <AttractionsBox
+                key={attraction.title}
                 image={attraction.image}
                 title={attraction.title}
                 description={attraction.description}
