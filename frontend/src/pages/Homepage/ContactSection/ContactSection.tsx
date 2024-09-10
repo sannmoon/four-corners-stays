@@ -40,6 +40,9 @@ function ContactSection() {
     control,
     watch,
   } = useForm({
+    defaultValues: {
+      room: "sunny",
+    },
     resolver: yupResolver(schema),
   });
 
@@ -48,7 +51,7 @@ function ContactSection() {
 
   useEffect(() => {
     setBlockedDatesLoading(true);
-    fetch(`http://localhost:3000/blocked-dates?room=${room}`)
+    fetch(`${import.meta.env.VITE_API_URL}/blocked-dates?room=${room}`)
       .then((res) => res.json())
       .then((data) => setBlockedDates(data))
       .finally(() => setBlockedDatesLoading(false));
@@ -58,7 +61,7 @@ function ContactSection() {
     setLoading(true);
 
     const apiResponse = await (
-      await fetch("http://localhost:3000/send-email", {
+      await fetch(`${import.meta.env.VITE_API_URL}/send-email`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
