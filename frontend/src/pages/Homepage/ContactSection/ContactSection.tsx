@@ -33,7 +33,6 @@ function ContactSection() {
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [blockedDates, setBlockedDates] = useState([]);
 
-
   const {
     register,
     handleSubmit,
@@ -161,7 +160,7 @@ function ContactSection() {
           <InfoBox
             icon={<PhoneIcon />}
             name={t("phone")}
-            description="+48 966 333 1111"
+            description={`+48 ${import.meta.env.VITE_PHONE_NUMBER}`}
           />
           <InfoBox
             icon={<EmailIcon />}

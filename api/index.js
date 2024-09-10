@@ -5,7 +5,6 @@ const Mailjet = require("node-mailjet");
 const cors = require("cors");
 const ical = require("ical");
 
-
 const mailjet = Mailjet.apiConnect(
   process.env.MAILJET_API_KEY,
   process.env.MAILJET_SECRET_KEY
@@ -27,7 +26,7 @@ app.get("/blocked-dates", async (req, res) => {
   const url = roomIcalMap[room];
 
   if (!url) {
-    res.status(404).send("Room not found");
+    return res.status(404).send("Room not found");
   }
 
   try {
@@ -41,7 +40,6 @@ app.get("/blocked-dates", async (req, res) => {
       if (data.hasOwnProperty(k)) {
         var ev = data[k];
         if (data[k].type == "VEVENT") {
-          console.log(ev.start, ev.end);
           const dateRange = getDatesBetween(ev.start, ev.end);
           //list of dates between start and end
 
@@ -106,8 +104,6 @@ app.post("/send-email", (req, res) => {
       if (result.body.Messages[0].Status === "success") {
         return res.json("api_email_delivered");
       }
-
-      console.log(result.body);
       res.status(500).json("api_email_not_delivered");
     })
     .catch((err) => {
