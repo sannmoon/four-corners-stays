@@ -5,6 +5,7 @@ const Mailjet = require("node-mailjet");
 const cors = require("cors");
 const ical = require("ical");
 
+
 const mailjet = Mailjet.apiConnect(
   process.env.MAILJET_API_KEY,
   process.env.MAILJET_SECRET_KEY
@@ -68,6 +69,7 @@ function getDatesBetween(start, end) {
 
   return dates;
 }
+
 app.post("/send-email", (req, res) => {
   const { name, email, message, room, reservationDates } = req.body;
 
@@ -92,7 +94,6 @@ app.post("/send-email", (req, res) => {
             NAME: ${name}
             ROOM: ${room}
             RESERVATION DATES: From ${reservationDates.from} to ${reservationDates.to}
-
             MESSAGE:
             ${message}
         `,
@@ -102,7 +103,6 @@ app.post("/send-email", (req, res) => {
 
   request
     .then((result) => {
-      console.dir(result.body, { depth: null });
       if (result.body.Messages[0].Status === "success") {
         return res.json("api_email_delivered");
       }

@@ -117,6 +117,8 @@ i18n
             "A museum dedicated to the life and legacy of Pope John Paul II, located in his family home.",
           carp: "A picturesque region known for its serene landscapes, rich biodiversity, and traditional carp fish farming.",
           explore_now: "Explore Now",
+          api_email_delivered: "Message has been delivered",
+          api_email_not_delivered: "Message has been delivered",
         },
       },
       pl: {
