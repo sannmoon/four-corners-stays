@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: false,
-    lng: "en",
+    lng: import.meta.env.DEFAULT_LANG,
     resources: {
       en: {
         translation: {
