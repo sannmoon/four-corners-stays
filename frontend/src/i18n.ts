@@ -123,7 +123,7 @@ i18n
       },
       pl: {
         translation: {
-          nav_home: "Strona głòwna",
+          nav_home: "Strona główna",
           nav_rooms: "Pokoje",
           nav_attractions: "Atrakcje w Pobliżu",
           nav_contact: "Kontakt",
