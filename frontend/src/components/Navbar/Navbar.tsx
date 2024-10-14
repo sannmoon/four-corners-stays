@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 function Navbar() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const location = useLocation();
 
@@ -34,7 +34,7 @@ function Navbar() {
   );
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: any) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setOpen(false);
       }
