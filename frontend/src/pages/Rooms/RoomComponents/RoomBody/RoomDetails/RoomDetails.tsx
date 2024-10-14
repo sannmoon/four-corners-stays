@@ -13,7 +13,7 @@ function RoomDetails({ header, list }: Props) {
       <h2>{header}</h2>
       <ul>
         {list.map((item) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>

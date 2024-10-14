@@ -22,7 +22,45 @@
       justify-content: center;
       font-weight: bold;
 
-      button {
+      .dateRange {
+        border-radius: 2px;
+        border: 1px solid #acadb0;
+        border-radius: 6px;
+        height: 50px;
+        width: auto;
+        font-size: medium;
+        padding-left: 10px;
+        margin-top: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .datePickerDropdown {
+        position: absolute;
+        background-color: #fae9de;
+        opacity: 0.95;
+        padding: 39px;
+        z-index: 100;
+        .calendarBtnWrapper {
+          display: flex;
+          justify-content: end;
+
+          .calendarBtn {
+            width: 55px;
+            height: 30px;
+            background-color: #c37107;
+            border: none;
+            font-size: 14px;
+            border-radius: 6px;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .contactButton {
         width: 130px;
         height: 50px;
         background-image: linear-gradient(

@@ -56,7 +56,7 @@ function Rooms() {
           <p>{t("booking_info")}</p>
           <div className="bookingInfo">
             <PhoneIcon className="phoneIconRooms" />
-            +48 966 333 1111
+            +48 {import.meta.env.VITE_PHONE_NUMBER}
           </div>
         </div>
       </div>
