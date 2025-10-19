@@ -37,7 +37,7 @@ function NearbyAttractions() {
       image: Tenczyn_Castle,
       title: "Tęczyn Castle",
       description: t("tenczyn"),
-      link: "https://www.youtube.com/watch?v=OgzVpJoRXrc",
+      link: "https://zamektenczyn.com/",
     },
     {
       image: Inwald,
@@ -62,7 +62,7 @@ function NearbyAttractions() {
       image: Zamek,
       title: "Museum Zamek of Oświęcim",
       description: t("zamek"),
-      link: "muzeum-zamek.pl",
+      link: "https://muzeum-zamek.pl",
     },
     {
       image: JohnPaul,
